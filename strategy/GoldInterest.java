@@ -1,5 +1,3 @@
-package strategy;
-
 public class GoldInterest implements InterestApplier {
 
 	@Override

@@ -1,5 +1,3 @@
-package strategy;
-
 public class BronzeInterest implements InterestApplier {
 
 	@Override

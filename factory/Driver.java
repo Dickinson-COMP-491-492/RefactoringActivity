@@ -1,5 +1,3 @@
-package factory;
-
 // Just a program that uses the Account class.
 public class Driver {
 
@@ -8,12 +6,12 @@ public class Driver {
 		g.deposit(10);
 		g.addInterest();
 		System.out.println("g: " + g.getBalance());
-		
+
 		Account s = Account.getAccount("Silver");
 		s.deposit(10);
 		s.addInterest();
-		System.out.println("s: " + s.getBalance());	
-		
+		System.out.println("s: " + s.getBalance());
+
 		Account b = Account.getAccount("Bronze");
 		b.deposit(10);
 		b.addInterest();
