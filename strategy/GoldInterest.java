@@ -1,7 +1,14 @@
 public class GoldInterest implements InterestApplier {
+  	private double rate;
+	  private double bonus;
 
-	@Override
-	public double getInterest(double balance) {
-		return balance*0.05 + 0.50;
-	}
+  	public GoldInterest(double rate, double bonus) {
+	  	this.rate = rate;
+	  	this.bonus = bonus;
+	  }
+
+  	@Override
+  	public double getInterest(double balance) {
+	  	return balance*rate + bonus;
+	  }
 }

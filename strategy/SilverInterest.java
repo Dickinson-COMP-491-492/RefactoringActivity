@@ -1,7 +1,12 @@
 public class SilverInterest implements InterestApplier {
+	  private double rate;
 
-	@Override
-	public double getInterest(double balance) {
-		return balance*0.025;
-	}
+	  public SilverInterest(double rate) {
+	  	this.rate = rate;
+  	}
+
+  	@Override
+  	public double getInterest(double balance) {
+	  	return balance*rate;
+	  }
 }
